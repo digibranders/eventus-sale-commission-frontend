@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+// components
+@import "./components/SalesChart.scss";
+@import "./components/TopBar.scss";
+@import "./components/SearchInput.scss";
+@import "./components/Input.scss";
+@import "./components/Button.scss";
+
+// pages
+@import "./pages/dashboard.scss";
+@import "./pages/auth.scss";

@@ -1,0 +1,23 @@
+/* TopBar.scss */
+
+/* Container for the TopBar */
+.top-bar {
+    @apply bg-[#676767] px-6 py-4 flex justify-between;
+  
+    .logo {
+      @apply h-[40px] object-contain m-auto;
+    }
+  
+    .actions {
+      @apply flex items-center justify-center gap-4;
+  
+      .search-input {
+        // You may add additional styling for SearchInput if needed
+      }
+  
+      .notification-icon {
+        @apply text-[22px] text-[#ffff];
+      }
+    }
+  }
+  

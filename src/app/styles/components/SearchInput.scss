@@ -1,0 +1,17 @@
+/* SearchInput.scss */
+
+/* Container for the input field */
+.search-input-container {
+    @apply relative;
+  
+    .input-field {
+      @apply focus:outline-none rounded-[8px] text-white placeholder-white bg-white/50 px-2 py-1 pl-10;
+      // Additional custom styling if needed
+    }
+  
+    .search-icon {
+      @apply absolute top-1/2 left-2 transform -translate-y-1/2 text-white;
+      // Adjust icon position if needed
+    }
+  }
+  
