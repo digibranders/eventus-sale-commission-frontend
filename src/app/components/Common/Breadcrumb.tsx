@@ -13,9 +13,9 @@ const Breadcrumb: React.FC = () => {
 
   return (
     <nav className="flex items-center space-x-2 py-4 px-6 bg-[#f4f4f4] rounded">
-      <Link href="/" className="text-[#1C1C1C]/40 hover:text-gray-600 transition">
-        Dashboard
-      </Link>
+      {/* <Link href="/" className="text-[#1C1C1C]/40 hover:text-gray-600 transition">
+        Login
+      </Link> */}
 
       {pathnames.map((value, index) => {
         const isLast = index === pathnames.length - 1;
@@ -23,8 +23,6 @@ const Breadcrumb: React.FC = () => {
 
         return (
           <div key={href} className="flex items-center space-x-2">
-            <AiOutlineRight className="text-gray-400" />
-
             {isLast ? (
               <span className="text-gray-500 font-medium">{formatLabel(value)}</span>
             ) : (
@@ -32,6 +30,7 @@ const Breadcrumb: React.FC = () => {
                 {formatLabel(value)}
               </Link>
             )}
+            <AiOutlineRight className="text-gray-400" />
           </div>
         );
       })}

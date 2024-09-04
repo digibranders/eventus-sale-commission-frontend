@@ -1,15 +1,13 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { MdOutlineDataUsage, MdOutlineEmojiEvents } from "react-icons/md";
-import { AiOutlineFileText } from "react-icons/ai";
-import { IoMdPeople } from "react-icons/io";
-import { BsFillCheckSquareFill } from "react-icons/bs";
 import { cloneElement } from "react";
 import { LuUser2 } from "react-icons/lu";
-import { DASHBOARD } from "../../../constants/routes";
+import { DASHBOARD, ZOHO_DATA, SALES_PERSON, ACHIEVEMENT_OUTPUT } from "../../../constants/routes";
 import { PiChartPieSliceFill } from "react-icons/pi";
 import { FaRegChartBar } from "react-icons/fa";
+import { GrDocumentUser } from "react-icons/gr";
+import { GoTrophy } from "react-icons/go";
 
 const Sidebar: React.FC = () => {
   const pathname = usePathname();
@@ -22,7 +20,9 @@ const Sidebar: React.FC = () => {
 
   const links = [
     { href: DASHBOARD, label: "Dashboard", icon: <PiChartPieSliceFill /> },
-    { href: "/zoho-data", label: "Zoho data", icon: <FaRegChartBar /> },
+    { href: ZOHO_DATA, label: "Zoho data", icon: <FaRegChartBar /> },
+    { href: SALES_PERSON, label: "Sales Person Input", icon: <GrDocumentUser /> },
+    { href: ACHIEVEMENT_OUTPUT, label: "Sales Person Input", icon: <GoTrophy /> },
   ];
 
   return (
@@ -41,7 +41,7 @@ const Sidebar: React.FC = () => {
               : "text-gray-700 hover:bg-gray-100 hover:text-black"
           }`}>
             <span className="mr-3">{getIcon(link.icon, link.href)}</span>
-            <span className="text-sm">{link.label}</span>
+            <span className="text-sm font-semibold">{link.label}</span>
           </Link>
         ))}
       </nav>
