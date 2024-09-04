@@ -1,0 +1,28 @@
+/* AuthPage.scss */
+
+/* Wrapper for the entire authentication page */
+.auth-page-wrapper {
+    @apply flex items-center justify-center min-h-screen bg-gray-100;
+  }
+  
+  /* Container for the authentication form */
+  .auth-container {
+    @apply w-full max-w-md p-8 space-y-4 bg-white rounded-lg shadow-md;
+  
+    .auth-heading {
+      @apply text-2xl font-bold text-center text-gray-800;
+    }
+  
+    .auth-form {
+      @apply space-y-4;
+    }
+  
+    .auth-footer {
+      @apply text-sm text-center text-gray-600;
+  
+      a {
+        @apply text-indigo-600 hover:underline;
+      }
+    }
+  }
+  

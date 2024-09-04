@@ -1,0 +1,9 @@
+export const LOGIN = "/";
+export const DASHBOARD = "/dashboard";
+export const ZOHO_DATA = "/dashboard/zoho-data";
+export const SALES_PERSON = "/dashboard/sales-person";
+export const ACHIEVEMENT_OUTPUT = "/dashboard/achievement-output";
+export const CUSTOMER_OUTPUT = "/dashboard/customer-output";
+export const VENDOR_OUTPUT = "/dashboard/vendor-output";    
+export const DEPARTMENT_OUTPUT = "/dashboard/department-output";
+export const PRODUCT_OUTPUT = "/dashboard/product-output";
