@@ -3,11 +3,13 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cloneElement } from "react";
 import { LuUser2 } from "react-icons/lu";
-import { DASHBOARD, ZOHO_DATA, SALES_PERSON, ACHIEVEMENT_OUTPUT } from "../../../constants/routes";
+import { DASHBOARD, ZOHO_DATA, SALES_PERSON, ACHIEVEMENT_OUTPUT, CUSTOMER_OUTPUT, VENDOR_OUTPUT, DEPARTMENT_OUTPUT, PRODUCT_OUTPUT } from "../../../constants/routes";
 import { PiChartPieSliceFill } from "react-icons/pi";
-import { FaRegChartBar } from "react-icons/fa";
+import { FaRegCalendarCheck, FaRegChartBar, FaUsers } from "react-icons/fa";
 import { GrDocumentUser } from "react-icons/gr";
 import { GoTrophy } from "react-icons/go";
+import { FaUsersRays } from "react-icons/fa6";
+import { AiOutlineProduct } from "react-icons/ai";
 
 const Sidebar: React.FC = () => {
   const pathname = usePathname();
@@ -22,7 +24,11 @@ const Sidebar: React.FC = () => {
     { href: DASHBOARD, label: "Dashboard", icon: <PiChartPieSliceFill /> },
     { href: ZOHO_DATA, label: "Zoho data", icon: <FaRegChartBar /> },
     { href: SALES_PERSON, label: "Sales Person Input", icon: <GrDocumentUser /> },
-    { href: ACHIEVEMENT_OUTPUT, label: "Sales Person Input", icon: <GoTrophy /> },
+    { href: ACHIEVEMENT_OUTPUT, label: "Achievement Output", icon: <GoTrophy /> },
+    { href: CUSTOMER_OUTPUT, label: "Customer Output", icon: <FaUsers /> },
+    { href: VENDOR_OUTPUT, label: "Vendor Output", icon: <FaRegCalendarCheck /> },
+    { href: DEPARTMENT_OUTPUT, label: "Department Output", icon: <FaUsersRays /> },
+    {href: PRODUCT_OUTPUT, label: 'Product Output', icon: <AiOutlineProduct />}
   ];
 
   return (
